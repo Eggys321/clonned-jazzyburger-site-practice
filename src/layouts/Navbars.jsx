@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import navLogo from "../assets/image 2.svg";
 import locationLogo from "../assets/Vector (1).svg";
@@ -9,6 +9,9 @@ import Cart from "../pages/Cart";
 
 const Navbars = () => {
   const [show, setShow] = useState(false);
+  // useEffect(()=>{
+
+  // },[])
   // function moueseIn(){
   //   show === false ?     setShow(true) : setShow(false)
 
