@@ -2,7 +2,7 @@ import React from 'react'
 
 const CheckOutComponent = () => {
   return (
-    <div>CheckOutComponent</div>
+    <div className='container'>CheckOutComponent</div>
   )
 }
 

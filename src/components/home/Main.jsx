@@ -47,8 +47,8 @@ const Main = () => {
           {data.map((datum) => {
             const { _id, title, image, description, price } = datum;
             return (
-              <Card  key={_id} className="rounded-4 card-inner position-relative ">
-                <Card.Img variant="top" src={image} className="w-100" />
+              <Card  key={_id} className="rounded-4 card-inner position-relative card-hover ">
+                <Card.Img variant="top" src={image} className="w-100 " />
                 <Card.Img variant="top" src={heartImg} className="w-25 position-absolute top-0 end-0 rounded-pill p-2"  />
                 <Card.Body>
                   <Card.Title className="fs-6"> {title} </Card.Title>

@@ -2,6 +2,10 @@
     width: 19rem;
 }
 
+/* .card-hover:hover{
+    transform: scale(1.1);
+} */
+
 
 @media(max-width:425px){
     .card-inner{

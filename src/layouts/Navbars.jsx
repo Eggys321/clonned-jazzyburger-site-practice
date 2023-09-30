@@ -9,12 +9,24 @@ import Cart from "../pages/Cart";
 
 const Navbars = () => {
   const [show, setShow] = useState(false);
+  // function moueseIn(){
+  //   show === false ?     setShow(true) : setShow(false)
+
+
+  // }
+
+  // function mouseOut(){
+  //   setShow(false)
+
+  // }
   return (
     <div className="container position-relative">
       <nav className="container d-flex justify-content-between align-items-center">
         <div className="d-flex justify-content-between align-items-center gap-3">
           <div>
-            <img src={navLogo} className="img-fluid p-3" alt="nav-logo" />
+            <Link to="/">
+              <img src={navLogo} className="img-fluid p-3" alt="nav-logo" />
+            </Link>
           </div>
           <div>
             <img
@@ -38,10 +50,18 @@ const Navbars = () => {
             className=""
             onClick={() => (!show ? setShow(true) : setShow(false))}
           >
-            <div >
-              <img className="" role='button' src={cartLogo} alt="cart-logo" />
+            <div>
+              <img className="" role="button" src={cartLogo} alt="cart-logo" />
             </div>
           </div>
+          {/* <div
+            className=""
+            onMouseOver={moueseIn}
+          >
+            <div>
+              <img className="" role="button" src={cartLogo} alt="cart-logo" />
+            </div>
+          </div> */}
         </div>
 
         {/* <ul>
@@ -49,10 +69,7 @@ const Navbars = () => {
                 <li>  <Link to='/Cart'> Cart </Link> </li>
               </ul> */}
       </nav>
-      <div className="position-absolute end-0">
-      {show && <Cart />}
-
-      </div>
+      <div className="position-absolute end-0">{show && <Cart />}</div>
     </div>
   );
 };
